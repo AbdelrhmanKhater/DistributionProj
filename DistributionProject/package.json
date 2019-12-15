@@ -1,0 +1,25 @@
+{
+  "name": "distributionproject",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "master": "node -r esm ./src/master.js",
+    "gateway": "node -r esm ./src/gateway.js",
+    "monitor": "node -r esm ./src/monitor.js",
+    "slave0": "node -r esm ./src/slave0.js",
+    "slave1": "node -r esm ./src/slave1.js",
+    "slave2": "node -r esm ./src/slave2.js",
+    "test": "node -r esm ./test.js" 
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "rethinkdb": "^2.4.1",
+    "uuid": "^3.3.3"
+  }
+}
